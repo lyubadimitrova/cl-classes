@@ -1,0 +1,30 @@
+<?xml version="1.0 " encoding="ISO -8859 -1"?>
+<project name="Graphs" basedir="." default="all">
+    
+    <property name="src.dir" value="src/main/java/graphs"/>
+    <property name ="build.dir" value ="build/"/>
+    <property name ="doc.dir" value ="doc/"/>
+    
+    <target name="compile" description="Compiles files">
+        <mkdir dir="${build.dir}"/>
+        <javac srcdir="${src.dir}" destdir="${build.dir}"/>
+    </target>
+
+    <target name="jar" description="JARs compiled files"  depends="compile">
+        <jar destfile="graphs.jar" basedir="${build.dir}"/>
+    </target>
+    
+    <target name="javadoc" description="Creates Javadoc for files">
+        <javadoc destfile="graphs.html" basedir="${doc.dir}"/>
+    </target>
+    
+    <target name="all" depends="jar,javadoc" description="Compiles, JARs, documents">
+    </target>
+    
+    <target name="clean" description="Delete all generated files">
+        <delete dir="${build.dir}"/>
+        <delete dir="${doc.dir}""/>
+        <delete file="graphs.jar"/>
+    </target >
+    
+</project>

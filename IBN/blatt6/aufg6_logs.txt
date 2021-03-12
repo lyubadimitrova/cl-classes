@@ -1,0 +1,160 @@
+Star marks where the clock hand (pointer) is, R-bit in brackets after the frame number.
+
+
+Referenzfolge A:
+
+[lyuba@hipster blatt6]$ python3 aufg6.py 3
+Please enter "A", "B", or a number sequence (separated by spaces):
+A
+Starting memory state: 
+*E(0)  E(0)  E(0)
+
+Accessing frame 7:
+Memory state after: 
+ 7(1) *E(0)  E(0)
+
+Accessing frame 0:
+Memory state after: 
+ 7(1)  0(1) *E(0)
+
+Accessing frame 1:
+Memory state after: 
+*7(1)  0(1)  1(1)
+
+Accessing frame 2:
+Memory state after: 
+ 2(1) *0(0)  1(0)
+
+Accessing frame 0:
+... Already in memory.
+Memory state after: 
+ 2(1) *0(1)  1(0)
+
+Accessing frame 3:
+Memory state after: 
+*2(1)  0(0)  3(1)
+
+Accessing frame 0:
+... Already in memory.
+Memory state after: 
+*2(1)  0(1)  3(1)
+
+Accessing frame 4:
+Memory state after: 
+ 4(1) *0(0)  3(0)
+
+Accessing frame 2:
+Memory state after: 
+ 4(1)  2(1) *3(0)
+
+Accessing frame 3:
+... Already in memory.
+Memory state after: 
+ 4(1)  2(1) *3(1)
+
+Accessing frame 0:
+Memory state after: 
+*4(0)  2(0)  0(1)
+
+Accessing frame 3:
+Memory state after: 
+ 3(1) *2(0)  0(1)
+
+Accessing frame 2:
+... Already in memory.
+Memory state after: 
+ 3(1) *2(1)  0(1)
+
+Accessing frame 1:
+Memory state after: 
+ 3(0)  1(1) *0(0)
+
+Accessing frame 2:
+Memory state after: 
+*3(0)  1(1)  2(1)
+
+Accessing frame 0:
+Memory state after: 
+ 0(1) *1(1)  2(1)
+
+Accessing frame 1:
+... Already in memory.
+Memory state after: 
+ 0(1) *1(1)  2(1)
+
+Accessing frame 7:
+Memory state after: 
+ 0(0)  7(1) *2(0)
+
+Accessing frame 0:
+... Already in memory.
+Memory state after: 
+ 0(1)  7(1) *2(0)
+
+Accessing frame 1:
+Memory state after: 
+*0(1)  7(1)  1(1)
+
+
+
+
+Referenzfolge B:
+
+[lyuba@hipster blatt6]$ python3 aufg6.py 3
+Please enter "A", "B", or a number sequence (separated by spaces):
+B
+Starting memory state: 
+*E(0)  E(0)  E(0)
+
+Accessing frame 2:
+Memory state: 
+ 2(1) *E(0)  E(0)
+
+Accessing frame 3:
+Memory state: 
+ 2(1)  3(1) *E(0)
+
+Accessing frame 2:
+... Already in memory.
+Memory state: 
+ 2(1)  3(1) *E(0)
+
+Accessing frame 1:
+Memory state: 
+*2(1)  3(1)  1(1)
+
+Accessing frame 5:
+Memory state: 
+ 5(1) *3(0)  1(0)
+
+Accessing frame 2:
+Memory state: 
+ 5(1)  2(1) *1(0)
+
+Accessing frame 4:
+Memory state: 
+*5(1)  2(1)  4(1)
+
+Accessing frame 5:
+... Already in memory.
+Memory state: 
+*5(1)  2(1)  4(1)
+
+Accessing frame 3:
+Memory state: 
+ 3(1) *2(0)  4(0)
+
+Accessing frame 2:
+... Already in memory.
+Memory state: 
+ 3(1) *2(1)  4(0)
+
+Accessing frame 5:
+Memory state: 
+*3(1)  2(0)  5(1)
+
+Accessing frame 2:
+... Already in memory.
+Memory state: 
+*3(1)  2(1)  5(1)
+

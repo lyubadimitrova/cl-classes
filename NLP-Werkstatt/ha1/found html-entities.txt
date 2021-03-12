@@ -1,0 +1,8 @@
+&#x00FC; : ü
+&#x1F600; : grinning face
+&#x2600;&#xFE0F; : sun
+&#x2753; : question mark
+&#x00DF; : ß
+&#x1F327; : cloud with rain
+&#x1F620; : angry face
+&#x26A1; : high voltage

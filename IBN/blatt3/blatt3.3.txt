@@ -1,0 +1,23 @@
+\begin{enumerate}
+    \item 256 Dateien. Der Befehl \texttt{ulimit -n} gibt die maximale Anzahl geöffneter Dateien per Prozess zurück. Es gibt zwei solche Limite: \textit{hard} (-H) und \textit{soft} (-S). 
+    
+    Limits auf Fedora 29 (Kernel 5.0):
+    \begin{itemize}
+        \item \texttt{ulimit -Hn} 
+        \item[] \texttt{4096}
+        \item \texttt{ulimit -[S]n}
+        \item[] \texttt{1024}
+    \end{itemize}
+    
+    Das \textit{soft} Limit kann von jedem Nutzer geändert werden (\texttt{ulimit -[S]n 4096}), aber nur bis zum Wert des \textit{hard} Limits. Das \textit{hard} Limit kann nur vom \texttt{root}-Nutzer geändert werden (\texttt{ulimit -Hn 8196}).
+    
+    \textbf{Quellen}: Stackexchange \footnote{\url{https://unix.stackexchange.com/questions/36841/why-is-number-of-open-files-limited-in-linux}}, \texttt{man ulimit}
+    
+    \item Zeile 856: \texttt{struct files\_struct *files;}
+    \item Link zum Quelltext\footnote{\url{https://elixir.bootlin.com/linux/latest/source/include/linux/fs.h#L916}}, Zeile 916.
+    
+    Angenommen, dass jeder Eintrag 4 Bytes benötigt, wäre der minimale Speicherbedarf der \texttt{file} Datenstruktur $\sim$90 Byte.
+    
+    \item Nein, den Dateideskriptor finden wir nicht in der \texttt{file} Datenstruktur. Aus der Figur im Abschnitt 4.4 des Buches geht hervor, dass die \texttt{files\_struct} Datenstuktur ein Array \texttt{fd[256]} enthält, dessen Elemente vom Typ \texttt{*file} sind. Die Indizes der Feldelemente sind im Endeffekt die Dateideskriptoren. Im Quellcode\footnote{\url{https://elixir.bootlin.com/linux/latest/source/include/linux/fdtable.h#L66}} heißt das Array \texttt{fd\_array} (Zeile 66).
+    
+\end{enumerate}

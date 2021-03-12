@@ -1,0 +1,68 @@
+8
+
+dir
+31
+svn://svn.ms.mff.cuni.cz/conll2009-st/sample-data/spanish
+svn://svn.ms.mff.cuni.cz/conll2009-st
+
+
+
+2009-01-10T14:59:35.174751Z
+29
+conll2009-st
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+387359ed-b66c-4ae8-9d4d-6000b538432b
+
+verbal-lexicon.es
+dir
+
+CoNLL2009-ST-Spanish-trial.txt
+file
+
+
+
+
+2009-01-12T08:59:05.000000Z
+ac2a9a1612f4034d4eeb77d022efdeb5
+2009-01-10T14:59:35.174751Z
+29
+conll2009-st
+
+tagsets.pdf
+file
+
+
+
+
+2009-01-12T08:59:05.000000Z
+1d48637cb18776058a328fdb645d9ac6
+2009-01-10T14:59:35.174751Z
+29
+conll2009-st
+has-props
+
+README.txt
+file
+
+
+
+
+2009-01-12T08:59:05.000000Z
+8d03c2212f0ba391b2d033f5c7e0a11f
+2009-01-10T14:59:35.174751Z
+29
+conll2009-st
+

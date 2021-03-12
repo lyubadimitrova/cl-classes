@@ -1,0 +1,4 @@
+S:( NE:Hans VP:( VVFIN:liebt NE:Maria ) )
+NE:Hans
+NE
+S:(NP:( ART:The ADJA:quick ADJA:brown NN:fox ) VP:( VVFIN:jumps PP:( APPR:over NP:( ART:the ADJA:lazy NN:dog ) ) ) )

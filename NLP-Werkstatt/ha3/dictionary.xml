@@ -1,0 +1,56 @@
+<?xml version ='1.0 ' encoding ='utf -8 '?>
+<dictionary language =" German " source =" http: // www . dwds . de">
+	<entry id="1">
+		<lemma>Interesse</lemma>
+		<pos type="Noun"/>
+		<morphology genus="neutr." gen_suffix="-s" nom_pl_suffix="-n"/>
+		<meaning id="1">
+			<properties number="sg"/>
+			<definition>aufmerksame geistige Teilnahme</definition>
+			<usage>
+				<example>ich habe Interesse daran, die Veranstaltung zu besuchen</example>
+				<example>etw. ist von geringem, untergeordnetem, erstrangigem Interesse</example>
+				<example>diese Tagung ist für uns nicht von Interesse</example>
+			</usage>
+		</meaning>
+		<meaning id="2">
+			<properties number="sg"/>
+			<definition>Nachfrage, Neigung zum Kauf</definition>
+			<usage>
+				<example>für diese Waren besteht großes, nur geringes Interesse</example>
+				<example>an Ihrem Angebot haben wir kein Interesse</example>
+			</usage>	
+		</meaning>
+		<meaning id="3">
+			<meaning id="3.1">
+				<properties number="pl"/>
+				<definition>Belange, Absichten, Bestrebungen</definition>
+				<usage>
+					<example>geschäftliche, private, politische, andere Interessen verfolgen</example>
+					<example>die Übereinstimmung der persönlichen mit den gesellschaftlichen Interessen</example>
+					<example>das Land wurde zum Spielball der Interessen seiner Nachbarländer</example>
+					<example>den, jmds. Interessen entsprechen, zuwiderlaufen</example>
+					<example>den Interessen der Menschheit dienen</example>
+					<example>jmds. Interessen wahrnehmen</example>
+				</usage>
+			</meaning>
+			<meaning id="3.2">
+				<definition>im Interesse einer Sache, Person</definition>
+				<usage>
+					<example>im Interesse der Sache, der Öffentlichkeit, des Lesers, Käufers, der Deutlichkeit, Verständlichkeit, Sicherheit</example>
+					<example>in meinem, deinem (eigenen) Interesse</example>
+					<example>ein Abkommen im Interesse des Friedens und der Völkerverständigung</example>
+					<example>es muss im Interesse des Bewerbers liegen, einen guten Eindruck zu machen</example>
+				</usage>
+			</meaning>
+		</meaning>
+		<meaning id="4">
+			<properties NB="veraltet" number="pl"/>
+			<definition>Zinsen, Gewinn</definition>
+			<usage>
+				<example>jetzt muß er mir für das Geld ... noch Interessen zahlen [Nestroy Zu ebener Erde II 8]</example>
+				<example>das sind annähernd fünfzehntausend Mark Interessen, das genügt [Wasserm., Wahnschaffe, 2,79]</example>
+			</usage>	
+		</meaning>
+	</entry>
+</dictionary>

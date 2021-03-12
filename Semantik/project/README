@@ -1,0 +1,45 @@
+Formal Semantics Project
+WS 2017/2018
+
+Author: Lyubomira Dimitrova 
+Matr. number: 3443834
+
+Requirements:
+
+    - spaCy
+        pip install -U spacy
+        
+    - the spaCy English model
+        python -m spacy download en
+
+Usage: 
+
+    python word_overlap_clustering.py -h
+    
+    Example:
+    python word_overlap_clustering.py -i path/to/dataset/ -o output_file.txt -t 0.04
+    
+    NB: word_overlap_clustering.py imports bag_of_wording.py. This should work out-of-the-box, but in case it doesn't, an empty __init__.py file in the directory should fix that.
+    
+    
+Files:
+
+    word_overlap_clustering.py          The clustering algorithm + output writer
+    
+    bag_of_wording.py                   The preprocessing (includes both spaCy and TreeTagger options).
+    
+    dimitrova_project_report.pdf        The project report
+    
+    output_test.txt                     The clustering produced on the test data.
+                                        Can be replicated with:
+                                        python word_overlap_clustering.py -i path/to/test/dataset -o output_test.txt
+                                        
+    tagged.txt                          The TreeTagger file of the TRIAL dataset, used in the 
+                                        Simplified system's preprocessing. 
+                                        (Only here in case recomputing is necessary.)
+                                        Baseline replication:
+                                        python word_overlap_clustering.py -i path/to/trial/dataset -o
+                                        baseline_trial.txt -b
+                                        
+                                        
+    

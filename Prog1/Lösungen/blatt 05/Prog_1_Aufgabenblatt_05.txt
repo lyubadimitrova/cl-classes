@@ -1,0 +1,29 @@
+﻿
+Aufgabe 16:
+
+
+a) 	Wert = ['P', 'y', 't', 'h', 'o', 'n', 'n', 'o', 'h', 't', 'y', 'P']
+	Typ = list
+
+b)	Wert = None
+	Typ = None-type
+
+c)	Da die Liste per Referenz übergeben wird enthält mylist die durch 
+	change_list() veränderte Liste.
+	Da change_list() kein return-statement hat ist result = None 
+	
+
+Aufgabe 18:
+
+
+dice() gibt eine Zufallszahl zwischen 1 und 6 zurück.
+iter wird mit 2 Argumenten aufgerufen, d.h. das erste Argument muss eine Funktion sein.
+Das 2.Argument gibt an, bei welchem Rückgabewert der übergebenen Funktion - hier 6 - 
+der Iterator aufhört zu iterieren (indem er intern eine StopIteration-Exception wirft). 
+Die bis dahin zurückgegebenen Werte werden als ein iterierbares Objekt zurückgegeben, das 
+der Variable "it" zugewiesen wird.
+Die for-Schleife versucht 100 Mal next aufzurufen und jeweils das nächste Element im 
+iterator-Objekt zurückzugeben, bis kein Element mehr vorhanden ist, was zu einer 
+StopIteration-Exception führt und die Schleife abgebrochen wird.
+
+tl;dr - Das Code iteriert randint, bis 6 'geworfen' wird.

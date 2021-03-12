@@ -1,0 +1,77 @@
+﻿
+
+
+
+Aufgabe 5
+	
+	a)  Die Einwohner der Stadt Heidelberg sind 156 267 (12/2015)              
+	    Im Durchschnitt macht jeder von Ihnen ungefähr 10 Fotos pro Tag
+            Ein Foto ist ungefähr 3MB groß
+            156267*10*3 = 4688010MB ~= 4578GB ~= 4.5TB
+
+
+	    Heidelberg besuchen 11,9 Mio. Touristen jährlich (2014)
+	    Dann pro Tag 11900000/365 ~= 32603
+	    Im Durchschnitt macht jeder von Ihnen täglich 200 Fotos
+	    Ein Foto ist ungefähr 3MB groß
+	    32603*200*3 = 19561800MB ~= 19103GB ~= 18,7TB
+
+	    Insgesamt werden 4.5 + 18.7 = 23.2TB an Fotos täglich in Heidelberg fotografiert
+
+
+	b)  Mit Hilfe von Wikipedia: Fermi-Problem
+
+	    Bevöklerung Deutschland: 81 292 688 (2016)
+	    Im Durchschnitt gibt es 2 Personen pro Haushalt
+	    Anzahl Klavier: "In Deutschlands Wohnzimmern stehen rund 1,5 Millionen Exemplare." (2012)
+	    81 292 688 / 1 500 000 ~= 54 Menschen für jeden Klavier in Deutschland
+	    In einem von 54/2 = 27 Haushalten gibt es ein Klavier 
+
+	    Die Einwohner der Stadt Heidelberg sind 156 267 (12/2015)
+	    Haushalte: 156 267/2 ~= 78134
+	    78134/27 ~= 2894 Klavier, die normalerweise gestimmt werden müssen
+
+	    Ein Klavierstimmer arbeitet normalerweise 8 Stunden * 5 Tagen/Woche * 32.6 Wochen/Jahr = 1304 Stunden pro Jahr
+	    Es dauert etwa 60 Minuten, um ein Klavier zu stimmen + 30 Minuten Fahrzeit (nur im Rahmen Heidelbergs) = 90 Minuten
+	    1304 / 1.5 ~= 869 Klaviere kann ein Klavierstimmer pro Jahr stimmen
+	    2894 Klavier in HD / 869 ~= 3 Klavierstimmer muss es in Heidelberg geben
+
+
+	c)  Ich habe es nicht geschafft, die benötigte Daten im Internet zu finden :/
+
+
+
+Aufgabe 6
+
+	a) Zeile 1: a   -> int		3
+	b) Zeile 2: a   -> int		6561
+	c) Zeile 3: b   -> float	8748.0
+	d) Zeile 4: a   -> float	15309.0
+	e) Zeile 5: b   -> bool		True
+
+	    
+Aufgabe 7
+
+	a) 0.2+0.1 = 0.30000000000000004
+	b) 0.2+0.2 = 0.4
+	c) 0.2+0.3 = 0.5
+	d) 0.2+0.4 = 0.6000000000000001
+	e) 0.2+0.5 = 0.7
+	f) 0.2 * 2 = 0.4
+	g) 0.2 * 3 = 0.6000000000000001
+	h) 0.2 * 4 = 0.8
+	i) 0.2 * 5 = 1.0
+	j) 0.2 * 6 = 1.2000000000000002
+
+
+	Q: Wie erkären Sie sich die Ergebnisse, die nicht der Schulmathematik zu entsprechen scheinen? 
+	A: Ich erkläre mich das alles gar nicht, vor allem wieso nur bestimmte Zahlen davon betroffen sind. Ich verstehe jedoch, 
+	   dass die Fließkommazahlen berücksichtigt werden sollen, um viel Mist vermeiden zu können
+
+	Q: Wie erreichen Sie, dass Sie Fließkommazahlen korrekt auf Gleichheit prüfen können?
+	A: Mit der round() Funktion:	z.B  round(0.4+0.2, 1)==0.6 ergibt True
+		    
+	    
+
+	
+	   

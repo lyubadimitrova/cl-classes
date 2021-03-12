@@ -1,0 +1,41 @@
+zu Aufgabe 21:
+
+Schwächen und Limitierungen:
+- Es gibt nur 25 Möglichkeiten Verschlüsselungen, wenn man wie hier linear verschiebt, weil
+  die 26. Verschiebung wieder den Ursprünglichen Text ergibt.
+- der Key für die Codierung ist nicht variabel
+- der Algorithmus funktioniert nur wenn das Alphabet 26 Zeichen enthält
+- er funktioniert nur für Strings die aus Alphanumerischen Zeichen bestehen, zahlen und Sonderzeichen können nicht
+  verarbeitet werden
+- er ist leicht zu knacken:
+· Man muss nur ein Programm schreiben, das den verschlüsselten Text um alle 25 Stellen
+  verschiebt und jeweils das Ergebnis überprüfen, ob es lesbar ist.
+· Das geht natürlich auch mit Stift und Papier.
+- Selbst wenn man den Key variabel macht: Encodierung und Decodierung sind nicht getrennt und 
+  funktionieren nur auf beiden Seiten, wenn ein Key verwendet wird der ein Vielfaches von 13 ist.
+
+Mögliche Verbesserungen:
+- so erweitern, dass verschiedene Keys genutzt werden können
+- so erweitern, dass codieren und decodieren getrennt sind, so dass bei Keys die keine Vielfachen von 13 sind 
+  zum decodieren mit Key * (-1) gearbeitet werden kann
+- die Funktion allgemeiner fassen: 
+  - für das jeweilige Alphabet(upper, lower, mixed, digits) eine Liste mit Tupeln aus (Buchstabe, Nummer) erstellen
+  - mit einer for-schleife über den String iterieren:
+	- für den jeweiligen Character:
+		 - auf Basis des Types(upper, lower, digits)den Index in der liste mit Tupeln ermitteln
+		 - auf Basis von Länge des Alphabetes und von Index den neuen Index berechnen
+		 -Character an der Stelle des neuen Indexes ausgeben
+- Alle in der Ascii Tabelle verzeichneten Zeichen zur Verschiebung (Verschlüsselung)
+  verwenden (ergibt immerhin 254 Mögliche Verschlüsselungen)
+- Nicht linear verschlüsseln ergibt eine Anzahl der Verschlüsselungsmöglichkeiten von Fakultät
+  26 (nicht linear heißt a kann mit z und b mit c Verschlüsselt sein aber nicht gleichzeitig a mit c
+  und b mit c, es muss eindeutig entschlüsselbar sein)
+Moduleinbindung:
+· Um eine Funktion als Modul in einem anderen Programm verwenden zu können muss man
+  es in einer Datei speichern, die vom Pythoninterpreter gefunden werden kann (mit .py und
+  am gleichen Speicherort des neuen Programms)
+· Die Funktion kann dann mit dem Import des Moduls und dem Aufruf der gewünschten
+  Funktion daraus, direkt im neuen Programm verwendet werden.
+· Damit gewinnt das neue Programm an Übersichtlichkeit und man muss nicht immer alles neu
+  programmieren.
+

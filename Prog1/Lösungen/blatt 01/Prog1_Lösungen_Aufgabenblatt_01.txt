@@ -1,0 +1,120 @@
+﻿Bearbeitet von
+Lyuba Dimitrova, Amer <Nachname einfügen>, Martina Brauchler
+
+1) 
+
+Mit 10 Fingern kann man bis 512 zählen, da jeder Finger zwei Zustände - gebeugt und 
+gestreckt - annehmen kann, dies entspricht 2 ** 9 und ergibt 512. /* Ist es nicht 2**10? Genau weil wir für jeden Finger 2 mögliche Zustände haben?
+
+
+2) 
+
+a) 	a = 3; a = a + 4; print (b)
+	> NameError: name 'b' is not defined (Es gibt keine Zuweisung für die Variable b)
+	> class: BaseExeption
+	Aufgabe variiert:
+	a = 3; a = a + 4; print (a)
+	> 7
+	type (a)
+	> <class 'int'> = Integer/Ganzzahl
+	
+b) 	b = 2.0 / 0; print (b)
+	> ZeroDivisionError: float division by zero (Fehler da nicht durch geteilt werden kann)
+	> class: BaseExeption
+
+c) 	str (2/7)
+	> '0.2857142857142857'
+	type (str (2/7))
+	> <class 'str'> = String
+	
+d)	str (2//7)
+	> '0'
+	> <class 'str'> = String
+
+e) 	i = 21 + 2; i % 3
+	> 2
+	> <class 'int'> = Integer/Ganzzahl
+
+f) 	'he' * 2 + 'ha' * 2
+	> 'hehehaha'
+	> <class 'str'> = String
+	
+g) 	a = '2.0'; 11 / int(a)
+	> ValueError: invalid literal for int() with base 10: '2.0'
+	> class: BaseExeption
+
+h)	a = '2.0'; 11 / float(a)
+	> 5.5
+	> <class 'float'> = Floating-point number
+
+i)	3.0 ** (5 - 10 / 2)
+	> 1.0
+	> <class 'float'> = Floating-point number
+	
+3)
+
+a) 	Als String, da es sich um eine Zeichenkette handelt. (Je nachdem wie der Name 
+	weiterverarbeitet werden soll ggf. als Klasse mit 2 Strings (Vorname, Nachname))
+
+b) 	Soll die Anzahl nur erfasst/ gezählt werden als Integer, da Kommilitonen 
+	nur als Ganzzahl (>= 0) vorkommen.
+	(Soll mit den Werten z.B. ein Durchsschnittswert über das Semester berechnet 
+	werden ggf. als Float)
+
+c) 	Als tuple aus drei Integern (1= day, 2 = month, 3 = year), da es sich jeweils um 
+	Ganzzahlen handelt und das Geburtsdatum eines Menschen sich nicht ändert. 
+	(Eigentlich als datetime.object, da dies weitere Operationen ermöglicht)
+
+d) 	Als Integer, da Höhenmeter ganzahlig angegeben werden.
+
+e) 	Als Boolean, da es nur die Zustände True or False gibt.
+
+f)	Als Dictionary, da so Key-Value Pairs aus Frage und Antwort gebildet werden können
+
+g)	Als string, weil es eine lange Zeichenkette ist, 
+	die Zahlen, Buchstaben und Sonderzeichen enthält. 
+
+h)	Als string, weil es eine Zeichenkette ist, die Zahlen, Buchstaben und 
+	Sonderzeichen enthält.
+	
+Nein /* Farben visuel darstellen?
+	
+4) 
+I) Binäre Darstellung:
+a) (1 * 2 ** 0) + (1 * 2 ** 1 + 1 * 2 ** 0)             oder	dez.	0	1	2	3         
+		1 						bin.	0	1      10      11
+	+  11 
+	-----								=> 1+11=100
+	    1 
+	-----   
+	= 100
+
+b) 
+		10000			16  8  4  2  1  0           10  5  2  1  0        26  13  6  3  1  0
+	+	 1010			 0  0  0  0  1               0  1  0  1		   0   1  0  1  1  
+	=	11010
+
+c) 	
+	1000000 * 1000000 = 1000000000000 (Linksshift)
+	(2 ** 6) * (2 ** 6) = 2 ** (6+6) = 2 ** 12 
+
+d)
+	100000000 / 100000 = 000001000 (Rechtsshift)
+	2 ** 8 / 2 ** 5 = 2 ** (8-5)= 2 ** 3
+
+II) Hexadezimale Darstellung:
+a) 		01 
+	+ 	03 
+	= 	04
+
+b) 		10 		16   1   0		26   1   0
+	+ 	0A		0    1		         A   1
+	=	1A
+
+c)	40 * 40 = 1000		64   4   0            4096  256   16   1   0
+				 0   4	       		 0    0    0   1   
+                                           		    __
+							     /|
+					      		    /	       32   2   0
+d) [256]10 = [100]16 ; [32]10 = [20]16                 256 /		0   2
+	100 / 20 = 8

@@ -1,0 +1,31 @@
+Übungsblatt 9
+
+Aufgabe 1
+
+(d)
+
+Design: 
+
+    - Document-Klasse. Sie hat eine String[] Instanzvariable, die die einzelnen Zeilen eines Dokuments, oder das einfache String[] Anfrage speichert. Ich habe mich für eine separate Document-Klasse entschieden, weil ein Dokument auf mehrere unterschiedliche Weisen repräsentiert werden kann, nicht nur als Term-Frequency-Vektor.
+
+    - DocumentAsVector-Klasse. Sie hat eine Map<String,Integer> Instanzvariable, die Wort-Frequenz-Paare speichert und zwei Konstruktoren, wobei der zweite die Angabe von Stopwörtern bei der Instantiiertung einer DocumentAsVector erlaubt. (Mir scheint das sinnvoll, weil die beiden Maps immer noch gleich erstellt werden und unterschiedliche Listen von Stopwörtern angegeben werden dürfen.) Dazu ist die Methode countTerm(String documentLine) implementiert, die in beiden Konstruktoren aufgerufen wird, um die Map-Entries zu erstellen. Bei dem Zählen wird Groß- bzw. Kleinschreibung der Wörter ignoriert.  Außerdem gibt es auch eine printTermFrequencyVector() Funktion, die nicht besonders wichtig ist, aber die Ausgaben haben Spaß gemacht.
+
+    - SimilarityComputer-Klasse. Eigentlich nur da, um bei SearchEngine die Parametrisierung hinzukriegen. Ich finde die Klasse aber sinnvoll, da es noch andere Ähnlichkeitsmäße implementiert werden können.
+
+    - CosineSimilarityComputer-Klasse. Erbt von SimilarityComputer. getSimilarity(DocumentAsVector document, DocumentAsVector query) Methode, die die Kosinusähnlichkeit zweier Vektoren berechnet. Die Vererbung ist hier ziemlich unnötig, aber, wie schon erwähnt, SearchEngine braucht Parametrisierung usw.
+
+    - OverlapSimilarityComputer-Klasse. Erbt auch von SimilarityComputer. getSimilarity(DocumentAsVector document, DocumentAsVector query) Methode, die die Überlappungsähnlichleit zweier Vektoren berechnet. Kommentar wie oben.
+
+    - SearchEngine-Klasse, die nach einer Collection von Dokumenten und einem SimilarityComputer parametrisiert ist. Die Klasse hat zwei Instanzvariablen, die durch einem Konstruktor definiert werden. 
+
+    Kommentar: Generics verstehe ich nicht ganz gut, und die Folien haben nicht besonders geholfen. Es wurden meiner Meinung nach nicht genug Beispiele gegeben, wofür eine typparametrisierte Klasse benutzt werden soll und wie Objekte dieser Klasse aussehen.
+
+
+Aufgabe 2
+
+(b)
+
+Probleme:
+
+    - Es waren viele kleine Veränderungen des Codes nötig - das bedeutet, dass die Implementation sehr spezifisch und daher nicht leicht auf andere Aufgabenstellungen übertragbar. Ich habe aber bemerkt, dass die Haltung an meiner ersten Implementation relativ gute Ergebnisse geliefert hat. 
+    
